@@ -1,0 +1,248 @@
+/* Google fonts & font family
+==================================================*/
+
+@import 'https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i';
+
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+/*Preloader */
+
+#loading {
+  overflow: hidden;
+ 
+}
+#loader {
+     width: 20vmax;
+     height: 50vmax;
+     
+     margin:auto;
+     background-image: url(../images/preloader.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+ 
+}
+
+
+#mycontent{
+  display:none;
+} 
+/*preloader end*/
+
+/*body content*/
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    
+}
+/*HEADER SECTION*/
+.header .banner{
+  position:relative;
+  
+}
+.responsive{
+  width:100%;
+  height:auto;
+
+  box-shadow: 5px 10px 18px #888888;
+ 
+}
+@media only screen and (max-width:1024px){
+     
+    .header .info{
+      position:absolute;
+      top:10vw;
+      left:12vw;
+      right:12vw;
+      
+    }
+
+}
+@media only screen and (min-width:1024px){
+     
+    .header .info{
+      position:absolute;
+      top:10vw;
+      left:22vw;
+      right:20vw;
+      
+    }
+
+}
+
+
+
+.header .info-image{
+  width:12vw;
+  height:14vw;
+  border-radius:50%;
+  margin:0px auto;
+  display:block;
+}
+.heading{
+  font-size:6vmin;
+  text-align:center;
+  font-family:garamond;
+  font-weight:bold;
+  text-shadow: 2px 2px 8px #425BB5;
+}
+.subheading{
+  
+  font-size:3vmin;
+  font-family:garamond;
+  text-align:center;
+  
+}
+/*HEADER END*/
+/*EDUCATION SECTION*/
+.row {
+   
+    margin-top: 10vh;
+}
+
+.resume-heading{
+  font-size:5vmin;
+  color:#7395AE;
+  text-align:center;
+  font-family:'Playfair Display',verdana;
+  font-weight:bold;
+  text-shadow: 2px 2px 8px #7395AE;
+  
+}
+.resume-info{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  margin-left:39vmin;
+  margin-top:6vh;
+  
+
+}
+
+@media only screen and (max-width:768px){
+     
+    .resume-info{
+      margin-left:10vmin;
+      margin-top:6vh;
+      }
+
+}
+@media only screen and (min-width:768px) and (max-width:1000px){
+     
+    .resume-info{
+      margin-left:16vmin;
+      margin-top:6vh;
+      }
+      
+
+}
+
+.item{
+  width:70vmin;
+  line-height: 2;
+}
+.resume-info-style{
+    font-family: "Raleway";
+    font-size:2.9vmin;
+    color: #5D5C61;
+}
+.resume-content-style{
+    font-family: "Raleway";
+    font-size:2.9vmin;
+    color: #557A95;
+}
+/*EDUCATION SECTION END*/
+
+/*INTERNSHIP*/
+.row2 {
+    
+    background-color: lightgrey;
+    margin-top: 10vh;
+
+    box-shadow: 5px 10px 18px  #888888;
+}
+#content-adjust{
+  padding-top:4vh;
+  padding-bottom:10vh;
+}
+.color-set1{
+  color:white;
+}
+
+.color-set3{
+  color:black;
+}
+.color-set4{
+  color:#557A95;
+}
+/*link*/
+a{
+  text-decoration:none;
+  transition: box-shadow 0.3s;
+}
+a:hover {
+  box-shadow: 0 3px 20px 0 #888888;
+}
+a:link {
+    color:#037B94;
+
+
+}
+
+#progress {
+    background: #333;
+    border-radius: 13px;
+    height: 3vmin;
+    width: 60vmin;
+    padding: 3px;
+    
+}
+
+#progress span {
+    
+    display: block;
+    background: #557A95;
+    height:100%;
+    
+
+    border-radius: 9px;
+   
+
+}
+.adjust{
+  
+  z-index:1;
+  color:white;
+ margin-top:-4.5vmin;
+  margin-left:25vmin;
+}
+.btn{
+  background: #ccc;
+border: 2px solid #557A95;
+border-radius: 2px;
+color: #fff;
+cursor: pointer;
+
+padding: 2px;
+text-transform: uppercase;
+transition:
+color 0.3s linear 0.1s,
+background 0.3s linear 0.1s,
+box-shadow 0.3s linear 0.1s,
+border 0.3s linear 0.1s;
+letter-spacing: 1px;
+}
+.footer{
+text-align:center;
+font-size:2.7vmin;
+font-family:garamond;
+}
